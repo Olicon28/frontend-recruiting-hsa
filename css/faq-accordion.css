@@ -31,10 +31,8 @@ body { background: #af68ea; background: linear-gradient(180deg, #af68ea 0%, #646
 
 .accordion .accordion__cell .btn { background: none; border: none; }
 
-.accordion .accordion__cell .btn img { vertical-align: top; padding-bottom: .9em; }
+.accordion .accordion__cell .btn img { vertical-align: top; padding-bottom: .9em; cursor: pointer; }
 
-.accordion .accordion__cell .btn img:hover { border: 1px solid salmon; }
-
-.accordion .accordion__cell .cell__answer { display: none; width: 100%; }
+.accordion .accordion__cell .cell__answer { display: block; width: 100%; }
 
 .accordion .accordion__cell .cell__answer:target { color: salmon; display: block; }

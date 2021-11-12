@@ -94,13 +94,11 @@ body{
             img{
                 vertical-align: top;
                 padding-bottom: .9em;
-                &:hover{
-                    border: 1px solid salmon;
-                }
+                cursor: pointer;
             }
         }
         .cell__answer{
-            display: none;
+            display: block;
             width: 100%;
             &:target{
                 color: salmon;
