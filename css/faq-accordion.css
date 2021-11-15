@@ -25,14 +25,20 @@ body { background: #af68ea; background: linear-gradient(180deg, #af68ea 0%, #646
 
 .accordion { width: 100%; }
 
-.accordion .accordion__cell { display: flex; margin-top: 1em; flex-direction: row; justify-content: space-between; flex-wrap: wrap; font-size: 1.4em; min-height: 2.4em; border-bottom: 1px solid #e7e7e9; }
+.accordion .accordion__cell { display: flex; margin-top: 1em; flex-direction: row; justify-content: space-between; flex-wrap: wrap; font-size: 1.4em; min-height: 2.4em; padding-bottom: .8em; border-bottom: 1px solid #e7e7e9; }
 
 .accordion .accordion__cell .cell__question { width: 90%; }
 
+.accordion .accordion__cell .cell__question:hover { color: #f47c57; }
+
 .accordion .accordion__cell .btn { background: none; border: none; }
 
-.accordion .accordion__cell .btn img { vertical-align: top; padding-bottom: .9em; cursor: pointer; }
+.accordion .accordion__cell .btn img { vertical-align: top; cursor: pointer; transform: rotate(0deg); transition: transform .5s ease; }
 
-.accordion .accordion__cell .cell__answer { display: block; width: 100%; }
+.accordion .accordion__cell .cell__answer { max-height: 0; transition: max-height .5s ease; width: 100%; margin-top: .8em; order: 2; overflow: hidden; }
 
-.accordion .accordion__cell .cell__answer:target { color: salmon; display: block; }
+.accordion .accordion__cell .cell__answer:target { max-height: 10em; transition: max-height .5s ease; }
+
+.accordion .accordion__cell .cell__answer:target ~ a img { transform: rotate(180deg); transition: transform .5s ease; }
+
+.accordion .accordion__cell .cell__answer:target ~ .cell__question { font-weight: bold; }
