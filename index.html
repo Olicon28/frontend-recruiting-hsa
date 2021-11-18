@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/116aeae455.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/githubSearch.css">
+    <title>GitHub Search</title>
+</head>
+<body>
+    <div class="gitHubSearch container">
+        <header id="header" class="header">
+            <div class="header__logo">
+                <h1>GitHub <span>Search</span></h1>
+            </div>
+            <div class="header__search">
+                <form class="search" id="searchForm">
+                    <input class="search__input" id="searchInput" placeholder="Ingresa un usuario Github"  />
+                    <button class="search__button">
+                        <i class="button__icon fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <main id="main" style="display: none;">
+            <div class="content" style="display: none;">
+                <div id="loader" class="loader">
+                    <div class="dots">
+                        <span id="dot--1"></span>
+                        <span id="dot--2"></span>
+                        <span id="dot--3"></span>
+                    </div>
+                    <div class="loader__overlay"></div>
+                </div>
+                <div class="profile">
+                    <div class="profile__img">
+                        <img id="imgAvatar" src="" alt="" width="200" height="210">
+                    </div>
+                    <div class="profile__name">
+                        <h2 id="profileName">Darth Vader</h2>
+                        <span id="nickName" class="profile__nickname">
+                            anakinskywalker
+                        </span>
+                    </div>
+                    <div class="profile__features">
+                        <div class="features__item">
+                            <i class="fas fa-globe features__icon"></i>
+                            <a href="#" id="webSite" class="features__name" target="_blank">The Galactic Empire</a>
+                        </div>
+                        <div class="features__item">
+                            <i class="fas fa-map-marker-alt features__icon"></i>
+                            <span id="country" class="features__name">Tatooine</span>
+                        </div>
+
+
+                        <div class="features__item">
+                            <i class="far fa-star features__icon"></i>
+                            <span id="followersProfile" class="features__name">1.000.000</span>
+                        </div>
+
+
+                        <div class="features__item">
+                            <i class="fas fa-user-friends features__icon"></i>
+                            <span class="features__name">4</span>
+                        </div>
+
+                        <div class="features__item">
+                            <i class="far fa-circle features__icon"></i>
+                            <span class="features__name">9.999.999</span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div id="repositories" class="repositories"></div>
+            </div>
+            <div class="errorPage" style="display: none;"></div>
+        </main>
+    </div>
+    
+</body>
+<script src="js/githubSearch.js"></script>
+</html>
