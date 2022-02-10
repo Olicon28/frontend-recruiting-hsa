@@ -1,0 +1,257 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/index.scss ***!
+  \**************************************************************************************************************/
+#dot--1 {
+  animation-delay: 0s;
+}
+
+#dot--2 {
+  animation-delay: 0.1s;
+}
+
+#dot--3 {
+  animation-delay: 0.2s;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  position: absolute;
+}
+.loader .dots {
+  text-align: center;
+  width: 78px;
+  height: 49px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.loader span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  margin: 24px auto;
+  background: #ab5aef;
+  border-radius: 49px;
+  animation: loader 0.2s infinite alternate;
+}
+.loader__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 24px;
+  border: 1px solid #ab5aef;
+  max-width: 960px;
+  width: 100vw;
+  height: calc(100vh - 48px);
+  margin: 24px auto;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 12;
+}
+.header__logo {
+  width: 100%;
+}
+.header__logo h1 {
+  text-align: center;
+  font-size: 4em;
+}
+.header__logo span {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.header--top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  transition: height 2s ease;
+  margin-bottom: 40px;
+}
+.header--top .header__logo {
+  width: auto;
+  flex-grow: 1;
+}
+.header--top .header__logo h1 {
+  text-align: left;
+  display: inline;
+  font-size: 3.2em;
+  vertical-align: middle;
+  letter-spacing: 7px;
+  line-height: 40px;
+}
+.header--top .header__logo h1 span {
+  font-style: italic;
+  font-weight: lighter;
+}
+.header--top .header__search {
+  flex-grow: 11;
+}
+.header--top .header__search .search {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.search {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.search__input {
+  width: 85%;
+  height: 40px;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+}
+.search__button {
+  width: 15%;
+  height: 40px;
+  border: none;
+  background-color: #ab5aef;
+  color: #FFF;
+}
+.search__button .button__icon {
+  font-size: 16px;
+}
+
+main {
+  position: relative;
+  flex-grow: 0;
+}
+main.main--content {
+  flex-grow: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: space-between;
+}
+.content > div {
+  flex-grow: 1;
+}
+.content > div:last-child {
+  flex-grow: 3;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.profile__img {
+  width: 300px;
+  height: auto;
+}
+.profile__img img {
+  width: 100%;
+  height: auto;
+}
+.profile__name {
+  margin-top: 24px;
+}
+.profile__name h2 {
+  font-size: 3.2em;
+  font-weight: normal;
+}
+.profile__nickname {
+  font-size: 1.6em;
+  font-weight: lighter;
+}
+.profile__features {
+  margin-top: 16px;
+}
+.profile__features .features__item {
+  margin-top: 8px;
+  font-weight: lighter;
+}
+.profile__features .features__item .features__icon {
+  font-size: 2em;
+  vertical-align: middle;
+}
+.profile__features .features__item .features__name {
+  font-size: 1.6em;
+  vertical-align: middle;
+}
+
+.repositories {
+  padding-left: 24px;
+}
+.repositories a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.repositories__item {
+  margin-bottom: 16px;
+}
+.repositories__name {
+  color: #ab5aef;
+  font-size: 3.2em;
+  font-weight: normal;
+  line-height: 35px;
+  display: inline;
+}
+.repositories__description {
+  font-size: 1.8em;
+}
+.repositories__stars {
+  margin-top: 8px;
+  font-size: 1.6em;
+}
+
+.errorPage {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorPage h2 {
+  position: relative;
+  color: #ab5aef;
+  font-size: 3.2em;
+  font-weight: lighter;
+}
