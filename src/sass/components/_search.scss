@@ -1,0 +1,23 @@
+.search{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    &__input{
+        width: 85%;
+        height: 40px;
+        border: 1px solid $secondaryColor;
+        border-radius: 4px 0 0 4px;
+        padding: 10px;
+    }
+    &__button{ 
+        width: 15%;
+        height: 40px;
+        border: none;
+        background-color: $primaryColor;
+        color: #FFF;
+        .button__icon{
+            font-size: 16px;
+        }
+    }
+}

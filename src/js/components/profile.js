@@ -1,10 +1,10 @@
-import {API, nameProfile} from './variables.js';
+import {API, getNameProfile} from './variables.js';
 import loadErrorPage from './errorPage.js'
 
 const showProfile = async () =>{
     
     try{        
-        const response = await fetch(API.concat(nameProfile));
+        const response = await fetch(API.concat(getNameProfile()));
         if(!response.ok){
             throw new Error(response.status);
         }

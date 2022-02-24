@@ -6,7 +6,7 @@ module.exports = {
     entry : './src/js/index.js',
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js"
+        filename: "[name].[contenthash].js"
     },
     resolve: {
         extensions: ['.js']
@@ -32,6 +32,8 @@ module.exports = {
             template: './index.html',
             filename: './index.html'
         }),
-        new miniCssExtractplugin()
+        new miniCssExtractplugin({
+            filename: '[name].[contenthash].css'
+        })
     ]
 }

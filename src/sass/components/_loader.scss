@@ -1,0 +1,52 @@
+#dot--1 {
+	animation-delay: 0s;
+}
+
+#dot--2 {
+	animation-delay: 0.1s;
+}
+
+#dot--3 {
+	animation-delay: 0.2s;
+}
+
+@keyframes loader {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    .dots{
+        text-align: center;
+        width:78px;
+        height:49px;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    span{
+        display: inline-block;
+	    vertical-align: middle;
+	    width: 11px;
+	    height: 11px;
+	    margin: 24px auto;
+	    background: $primaryColor;
+	    border-radius: 49px;
+	    animation: loader .2s infinite alternate;
+    }
+    &__overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+    }
+}
